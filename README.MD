@@ -17,6 +17,11 @@ Linux
 export FLASK_ENV=development
 export FLASK_APP=application
 
+### 'installed packages'
+pip install Flask
+pip install Flask-WTF
+pip install flask-bootstrap
+
 
 ### 'pyhton start' 
 

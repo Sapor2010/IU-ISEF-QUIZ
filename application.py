@@ -1,18 +1,20 @@
 from flask import Flask, render_template
-
+from flask_wtf.csrf import CSRFProtect
 app = Flask(__name__)
 
+csrf = CSRFProtect()
+csrf.init_app(app)
 
-@app.route("/")
+@app.route("/", methods=['GET'])
 def index():
     return render_template('index.html')
 
-@app.route("/menu")
+@app.route("/menu", methods=['GET'])
 def menu():
     return render_template('menu.html')
 
 
-@app.route("/help")
+@app.route("/help", methods=['GET'])
 def help():
     return render_template('help.html')
 
