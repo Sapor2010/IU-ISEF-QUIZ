@@ -21,6 +21,7 @@ export FLASK_APP=application
 pip install Flask
 pip install Flask-WTF
 pip install flask-bootstrap
+pip install csrf
 
 
 ### 'pyhton start' 
