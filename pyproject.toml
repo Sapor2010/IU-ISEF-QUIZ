@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "iu-isef"
+version = "0.1.0"
+description = ""
+authors = ["Sapor2010 <sapor1@gmx.de>"]
+license = "Apache"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+Flask = "^2.1.1"
+Flask-Bootstrap = "^3.3.7"
+csrf = "^0.1b1"
+
+[tool.poetry.dev-dependencies]
+Flask-WTF = "^1.0.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
